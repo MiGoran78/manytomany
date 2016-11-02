@@ -1,0 +1,26 @@
+cd ~
+php artisan serve
+
+
+cd C:/xampp/htdocs
+composer create-project --prefer-dist laravel/laravel **project_name**
+**modify**   C:\Windows\System32\drivers\etc\hosts
+**modify**   C:\xampp\apache\conf\extra\httpd-vhosts.conf
+
+
+
+php artisan make:model Role -m
+php artisan make:migration create_users_roles_table --create=role_user
+
+
+php artisan make:model Country -m
+php artisan make:migration add_country_id_column_to_user --table=users
+
+php artisan make:model Photo -m
+
+
+
+
+
+php artisan make:model Address -m
+php artisan migrate
