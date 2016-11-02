@@ -1,2 +1,2 @@
 ## Laravel PHP Framework
-##### Database - Eloquent many to many relationship CRUD 
+##### Database - Eloquent Many to Many relationship CRUD 
