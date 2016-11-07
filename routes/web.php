@@ -68,3 +68,28 @@ Route::get('/delete', function (){
 });
 
 
+
+Route::get('/attach', function (){
+    $user = User::findOrFail(1);
+
+    $user->roles()->attach(6);
+});
+
+
+
+Route::get('/detach', function (){
+    $user = User::findOrFail(1);
+
+    $user->roles()->detach(6);
+});
+
+
+
+Route::get('/sync', function (){
+    $user = User::findOrFail(1);
+
+    $user->roles()->sync([]);
+});
+
+
+
